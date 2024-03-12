@@ -66,7 +66,7 @@ for contact in contacts:
         #paste_content(driver, message_box, message)
         ActionChains(driver).send_keys_to_element(message_box, message).perform()
         time.sleep(3)
-        message_box.send_keys(Keys.ENTER)
+        paste_content(driver, message_box, message)
         sucsessful_count = sucsessful_count + 1
         time.sleep(3)
     except:
